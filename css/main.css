@@ -13,13 +13,21 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 #sidebar ul li:hover{background:#232a32}
 #sidebar ul li.uk-active a{color:#fff}
 #sidebar ul a{color:rgba(255,255,255,0.5);display:block;font-size:13px;line-height:20px;margin:0}
+@media (max-width:959px){
+#sidebar{width:160px}
+#sidebar .uk-logo{font-size:20px}
+#sidebar ul a{font-size:12px}
+}
 
 .main-container{margin-left:170px;background:#f5f5f5}
+@media (max-width:959px){
+.main-container{margin-left:160px}
+}
 
 .recipe .affix{position:absolute;top:28px;right:16px;color:#333}
 
 .uk-card-header{border:none!important}
-.uk-card-header h2{color: #646464;font-size:16px;font-weight:bold;text-transform: uppercase}
+.uk-card-header h2{color: #646464;font-size:16px;font-weight:bold;text-transform:uppercase}
 .uk-card-body{background:#f9f9f9}
 
 footer{background:#fff;padding:10px 0;font-size:13px}
@@ -31,7 +39,8 @@ h2{font-size:26px}
 .uk-notification h2{font-size:20px;margin-bottom:10px}
 .uk-notification-message-primary{background:#d9ecd5}
 
-.uk-button-empty span{padding:10px}
+.uk-button-empty:hover{background:#e3e3e3}
+.uk-button-empty span{max-width:130px;padding:10px;box-sizing:border-box;display:inline-block;line-height:18px;text-align:left;vertical-align:middle}
 
 * + address, * + dl, * + fieldset, * + figure, * + ol, * + p, * + pre, * + ul{margin-top:10px}
 address, dl, fieldset, figure, ol, p, pre, ul{margin-bottom:10px}
