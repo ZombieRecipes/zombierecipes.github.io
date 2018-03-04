@@ -17,7 +17,9 @@
 		<!-- Uikit3-->
 		<script src="js/uikit.min.js"></script>
 		<script src="js/uikit-icons.min.js"></script>
-		<script src="js/all.js"></script>
+    <script src="js/all.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
 <body>
 		<nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left">
@@ -41,39 +43,100 @@
 
 		<div class="main-container">
 				<div class="main" uk-height-viewport="expand:true">
+          <header class="uk-container uk-container-expand">
+            <div class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
+                <div class="uk-navbar-left">
+                  <ul class="uk-navbar-nav">
+                      <li>
+                          <a href="#">
+                              <span class="uk-icon uk-margin-small-right" uk-icon="icon: search"></span>
+                              Поиск рецепта
+                          </a>
+                      </li>
+                  </ul>
+    
+                  <div class="uk-navbar-item">
+                      <form action="javascript:void(0)">
+                          <input class="uk-input uk-form-width-medium" type="text" placeholder="Введите название">
+                          <button class="uk-button uk-button-default">Очистить</button>
+                      </form>
+                  </div>
+                </div>
+            </div>
+          </header>
 					<div class="uk-container uk-container-expand">
-            <div class="uk-clearfix"></div>
-            <h1 class="uk-margin-medium-bottom">Рецепты для версии от 22.8c</h1>
-            <hr />
-
-            <section id="long-range_weapons" class="uk-margin-bottom">
-              <h2>Дальний бой</h2>
-              
-              <div class="uk-inline-block uk-margin-small">
+            <section id="long-range_weapons" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
+              <div class="uk-card-header uk-padding-small">
+                  <h2>Дальний бой</h2>
+              </div>
+              <div class="uk-card-body uk-padding-small">
                   <div class="recipe uk-width-large">
-                      <button class="uk-button uk-button-default uk-padding-remove" type="button"><img src="images/icons/long-weapon/04.png"></button>
+                      <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/long-weapon/04.png"><span>Скорострел</span></button>
                       <div uk-dropdown="mode: click">
                         <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                         <div class="teleport">
                           <h3>Скорострел</h3>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-default uk-padding-remove" type="button"><img src="images/icons/ingredient/023.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Сталь" uk-tooltip><img src="images/icons/ingredient/023.png"></button>
+                              <div uk-dropdown="mode: click" class="uk-padding-small">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">Посмотреть рецепт</a></div>
+                          </div>
+                          <div class="uk-inline uk-margin-small-bottom">
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Болты и клепки" uk-tooltip><img src="images/icons/ingredient/125.png"></button>
                               <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-default uk-padding-remove" type="button"><img src="images/icons/ingredient/125.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Курок" uk-tooltip><img src="images/icons/ingredient/065.png"></button>
                               <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-default uk-padding-remove" type="button"><img src="images/icons/ingredient/065.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Стальные трубы" uk-tooltip><img src="images/icons/ingredient/049.png"></button>
                               <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-default uk-padding-remove" type="button"><img src="images/icons/ingredient/049.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Рецепт" uk-tooltip><img src="images/icons/scheme/01.png"></button>
+                          </div>
+                        </div>
+                        <p><b>Атака:</b> +50 ед.</p>
+                        <p><b>Скорость атаки:</b> +5%</p>
+                        <hr class="uk-margin-small" />
+                        <p>ОРБ эффект со спеллами автоатаки.
+                        <br>Этот предмет может быть только 1.
+                        <br>Только для дальнего боя.</p>
+                      </div>
+                  </div>
+              </div>
+            </section>
+
+            <section id="short-range_weapons" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
+              <div class="uk-card-header uk-padding-small">
+                  <h2>Ближний бой</h2>
+              </div>
+                
+              <div class="uk-card-body uk-padding-small">
+                  <div class="recipe uk-width-large">
+                      <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/long-weapon/04.png"><span>ываыва</span></button>
+                      <div uk-dropdown="mode: click">
+                        <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
+                        <div class="teleport">
+                          <h3>Скорострел</h3>
+                          <div class="uk-inline uk-margin-small-bottom">
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/023.png"></button>
                               <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-default uk-padding-remove" type="button"><img src="images/icons/scheme/01.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/125.png"></button>
+                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                          </div>
+                          <div class="uk-inline uk-margin-small-bottom">
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/065.png"></button>
+                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                          </div>
+                          <div class="uk-inline uk-margin-small-bottom">
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/049.png"></button>
+                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                          </div>
+                          <div class="uk-inline uk-margin-small-bottom">
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/scheme/01.png"></button>
                               <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                           </div>
                         </div>
@@ -88,206 +151,164 @@
               </div>
             </section>
 
-            <section id="short-range_weapons" class="uk-margin-bottom">
-                <h2>Ближний бой</h2>
-                
-                <div class="uk-inline-block uk-margin-small">
+            <section id="set" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
+                <div class="uk-card-header uk-padding-small">
+                    <h2>Сеты</h2>
+                </div>
+                  
+                <div class="uk-card-body uk-padding-small">
                     <div class="recipe uk-width-large">
-                        <button class="uk-button uk-button-default uk-padding-remove" type="button">Скорострел</button>
+                        <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/long-weapon/04.png"><span>Скорострел</span></button>
                         <div uk-dropdown="mode: click">
-                          <a href="" class="affix"><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
+                          <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                           <div class="teleport">
                             <h3>Скорострел</h3>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Сталь</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/023.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Болты и гайки</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/125.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Курок</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/065.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Стальная труба</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/049.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Рецепт</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/scheme/01.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                           </div>
                           <p><b>Атака:</b> +50 ед.</p>
                           <p><b>Скорость атаки:</b> +5%</p>
-                          <p>ОРБ эффект со спеллами автоатаки.</p>
-                          <p>Этот предмет может быть только 1.</p>
-                          <p>Только для дальнего боя.</p>
+                          <hr class="uk-margin-small" />
+                          <p>ОРБ эффект со спеллами автоатаки.
+                          <br>Этот предмет может быть только 1.
+                          <br>Только для дальнего боя.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="set" class="uk-margin-bottom">
-                <h2>Сеты</h2>
-                
-                <div class="uk-inline-block uk-margin-small">
+            <section id="other" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
+                <div class="uk-card-header uk-padding-small">
+                    <h2>Разное</h2>
+                </div>
+                  
+                <div class="uk-card-body uk-padding-small">
                     <div class="recipe uk-width-large">
-                        <button class="uk-button uk-button-default uk-padding-remove" type="button">Скорострел</button>
+                        <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/long-weapon/04.png"><span>Скорострел</span></button>
                         <div uk-dropdown="mode: click">
-                          <a href="" class="affix"><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
+                          <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                           <div class="teleport">
                             <h3>Скорострел</h3>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Сталь</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/023.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Болты и гайки</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/125.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Курок</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/065.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Стальная труба</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/049.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Рецепт</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/scheme/01.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                           </div>
                           <p><b>Атака:</b> +50 ед.</p>
                           <p><b>Скорость атаки:</b> +5%</p>
-                          <p>ОРБ эффект со спеллами автоатаки.</p>
-                          <p>Этот предмет может быть только 1.</p>
-                          <p>Только для дальнего боя.</p>
+                          <hr class="uk-margin-small" />
+                          <p>ОРБ эффект со спеллами автоатаки.
+                          <br>Этот предмет может быть только 1.
+                          <br>Только для дальнего боя.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="other" class="uk-margin-bottom">
-                <h2>Разное</h2>
-                
-                <div class="uk-inline-block uk-margin-small">
-                    <div class="recipe uk-width-large">
-                        <button class="uk-button uk-button-default uk-padding-remove" type="button">Скорострел</button>
+            <section id="ingredient" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
+                <div class="uk-card-header uk-padding-small">
+                    <h2>Ингредиенты</h2>
+                </div>
+                  
+                <div class="uk-card-body uk-padding-small">
+                    <div class="recipe uk-width-large" id="steel">
+                        <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/023.png"><span>Сталь</span></button>
                         <div uk-dropdown="mode: click">
-                          <a href="" class="affix"><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
+                          <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                           <div class="teleport">
-                            <h3>Скорострел</h3>
+                            <h3>Сталь</h3>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Сталь</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/001.png"></button>
+                                <div uk-dropdown="mode: click">Уголь</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Болты и гайки</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/003.png"></button>
+                                <div uk-dropdown="mode: click">Железная руда</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Курок</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Стальная труба</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Рецепт</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/021.png"></button>
+                                <div uk-dropdown="mode: click">Миниреактор</div>
                             </div>
                           </div>
-                          <p><b>Атака:</b> +50 ед.</p>
-                          <p><b>Скорость атаки:</b> +5%</p>
-                          <p>ОРБ эффект со спеллами автоатаки.</p>
-                          <p>Этот предмет может быть только 1.</p>
-                          <p>Только для дальнего боя.</p>
+                          <p>Может быть использован для создания оружия или брони</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="ingredient" class="uk-margin-bottom">
-                <h2>Ингредиенты</h2>
-                
-                <div class="uk-inline-block uk-margin-small">
-                    <div class="recipe uk-width-large">
-                        <button class="uk-button uk-button-default uk-padding-remove" type="button">Скорострел</button>
-                        <div uk-dropdown="mode: click">
-                          <a href="" class="affix"><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
-                          <div class="teleport">
-                            <h3>Скорострел</h3>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Сталь</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Болты и гайки</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Курок</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Стальная труба</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                            <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Рецепт</button>
-                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                            </div>
-                          </div>
-                          <p><b>Атака:</b> +50 ед.</p>
-                          <p><b>Скорость атаки:</b> +5%</p>
-                          <p>ОРБ эффект со спеллами автоатаки.</p>
-                          <p>Этот предмет может быть только 1.</p>
-                          <p>Только для дальнего боя.</p>
-                        </div>
-                    </div>
+            <section id="scheme" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
+                <div class="uk-card-header uk-padding-small">
+                    <h2>Схемы - рецепты</h2>
                 </div>
-            </section>
-
-            <section id="scheme" class="uk-margin-bottom">
-                <h2>Схемы - рецепты</h2>
-                
-                <div class="uk-inline-block uk-margin-small">
+                  
+                <div class="uk-card-body uk-padding-small">
                     <div class="recipe uk-width-large">
-                        <button class="uk-button uk-button-default uk-padding-remove" type="button">Скорострел</button>
+                        <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/long-weapon/04.png"><span>Скорострел</span></button>
                         <div uk-dropdown="mode: click">
-                          <a href="" class="affix"><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
+                          <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                           <div class="teleport">
                             <h3>Скорострел</h3>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Сталь</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/023.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Болты и гайки</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/125.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Курок</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/065.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Стальная труба</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/ingredient/049.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                             <div class="uk-inline uk-margin-small-bottom">
-                                <button class="uk-button uk-button-default uk-padding-remove" type="button">Рецепт</button>
+                                <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/scheme/01.png"></button>
                                 <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                             </div>
                           </div>
                           <p><b>Атака:</b> +50 ед.</p>
                           <p><b>Скорость атаки:</b> +5%</p>
-                          <p>ОРБ эффект со спеллами автоатаки.</p>
-                          <p>Этот предмет может быть только 1.</p>
-                          <p>Только для дальнего боя.</p>
+                          <hr class="uk-margin-small" />
+                          <p>ОРБ эффект со спеллами автоатаки.
+                          <br>Этот предмет может быть только 1.
+                          <br>Только для дальнего боя.</p>
                         </div>
                     </div>
                 </div>
@@ -299,7 +320,7 @@
 					<div class="uk-container uk-container-expand">
 						<div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid="">
 							<div class="uk-text-left">ZombieRecipes © 1929-2018</div>
-							<div class="uk-text-right">From <a href="https://wolfcreative.ru">wolfcreative</a> with love</div>
+							<div class="uk-text-right">Crafted with love by <a href="https://wolfcreative.ru">wolfcreative</a></div>
 						</div>
 					</div>
 				</footer>

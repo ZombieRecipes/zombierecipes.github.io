@@ -23,4 +23,25 @@ $(function() {
     e.preventDefault();
     closeDropdowns($(this));
   });
+
+  $("#sidebar ul li").click(function() {
+    $('#sidebar ul li').removeClass('uk-active');
+    $(this).addClass('uk-active');
+  });
+
+  $("header form button").click(function() {
+    $(this).prev('input').val('');
+  });
+
+ $("header form input").keyup(function(){
+   _this = this;
+   
+   $.each($(".recipe .uk-button-empty span"), function() {
+     if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
+      $(this).closest('.recipe').hide();
+     } else {
+      $(this).closest('.recipe').show();
+     }
+   });
+ });
 });
