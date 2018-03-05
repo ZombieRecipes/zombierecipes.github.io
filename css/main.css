@@ -24,11 +24,13 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .main-container{margin-left:160px}
 }
 
+.recipe{font-size:15px;margin:15px 5px 15px 15px}
 .recipe .affix{position:absolute;top:28px;right:16px;color:#333}
+.recipe .uk-button-empty img{max-width:58px}
 
 .uk-card-header{border:none!important}
 .uk-card-header h2{color: #646464;font-size:16px;font-weight:bold;text-transform:uppercase}
-.uk-card-body{background:#f9f9f9}
+.uk-card-body{background:#f9f9f9;font-size:0}
 
 footer{background:#fff;padding:10px 0;font-size:13px}
 
@@ -36,7 +38,8 @@ h1{font-size:34px}
 h2{font-size:26px}
 
 .uk-notification{width:390px}
-.uk-notification h2{font-size:20px;margin-bottom:10px}
+.uk-notification h3{font-size:20px;margin-bottom:10px}
+.uk-notification img{max-width:54px}
 .uk-notification-message-primary{background:#d9ecd5}
 
 .uk-button-empty:hover{background:#e3e3e3}
