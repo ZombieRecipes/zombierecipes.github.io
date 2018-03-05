@@ -24,7 +24,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .main-container{margin-left:160px}
 }
 
-.recipe{font-size:15px;margin:15px 5px 15px 15px}
+.recipe{font-size:15px;margin:15px 5px 15px 15px;display:inline-block}
 .recipe .affix{position:absolute;top:28px;right:16px;color:#333}
 .recipe .uk-button-empty img{max-width:58px}
 
