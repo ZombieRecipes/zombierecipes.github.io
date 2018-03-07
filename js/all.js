@@ -31,7 +31,7 @@ $(function() {
  $("header form input").keyup(function(){
    _this = this;
    
-   $.each($(".recipe>.uk-button-empty>span"), function() {
+   $.each($(".recipe .teleport h3"), function() {
      if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
       $(this).closest('.recipe').hide();
      } else {
