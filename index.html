@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>ZombieRecipes - Рецепты, сборки для Zombie666 ORPG</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
-		<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
-		<link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZombieRecipes - Рецепты, сборки для Zombie666 ORPG</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
 
-		<!-- Uikit3 -->
-		<link rel="stylesheet" href="css/uikit.min.css">
-		<link rel="stylesheet" href="css/main.css">
+    <!-- Uikit3 -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<!-- Uikit3-->
-		<script src="js/uikit.min.js"></script>
-		<script src="js/uikit-icons.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Uikit3-->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/all.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
 <body>
-		<nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left">
-				<div class="uk-navbar">
-						<a href="/" class="uk-navbar-item uk-logo" title="Owl Pool">
-							<img src="images/logo.svg" />
-							<span class="title">ZombieRecipes</span>
-						</a>
-				</div>
-				<ul class="uk-nav uk-nav-default uk-nav-parent-icon uk-margin-small-top" uk-nav="">
-						<li><a uk-scroll href="#long-weapon">Оружие дальнего боя</a></li>
-						<li><a uk-scroll href="#short-weapon">Оружие ближнего боя</a></li>
+    <nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left">
+        <div class="uk-navbar">
+            <a href="/" class="uk-navbar-item uk-logo" title="Owl Pool">
+              <img src="images/logo.svg" />
+              <span class="title">ZombieRecipes</span>
+            </a>
+        </div>
+        <ul class="uk-nav uk-nav-default uk-nav-parent-icon uk-margin-small-top" uk-nav="">
+            <li><a uk-scroll href="#long-weapon">Оружие дальнего боя</a></li>
+            <li><a uk-scroll href="#short-weapon">Оружие ближнего боя</a></li>
             <li><a uk-scroll href="#shield">Щиты</a></li>
             <li><a uk-scroll href="#helmet">Шлемы</a></li>
             <li><a uk-scroll href="#armor">Броня</a></li>
@@ -41,10 +41,10 @@
             <li><a uk-scroll href="#component">Компоненты</a></li>
             <li><a uk-scroll href="#alchemy">Алхимия</a></li>
         </ul>
-		</nav>
+    </nav>
 
-		<div class="main-container">
-				<div class="main" uk-height-viewport="expand:true">
+    <div class="main-container">
+        <div class="main" uk-height-viewport="expand:true">
           <header class="uk-container uk-container-expand">
             <div class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
                 <div class="uk-navbar-left">
@@ -66,7 +66,7 @@
             </div>
           </header>
 
-					<div class="uk-container uk-container-expand">
+          <div class="uk-container uk-container-expand">
             <!-- Дальний бой -->
             <section id="long-weapon" class="uk-card uk-card-default uk-box-shadow-small uk-margin-bottom">
               <div class="uk-card-header uk-padding-small">
@@ -140,7 +140,7 @@
                       <div uk-dropdown="mode: click">
                         <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                         <div class="teleport">
-                          <h3>Хэтшотер</h3>
+                          <h3>ХэтШотер</h3>
                           <div class="uk-inline uk-margin-small-bottom">
                               <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Миниган" uk-tooltip><img src="images/icons/1/05.png"></button>
                           </div>
@@ -323,34 +323,38 @@
                       <div uk-dropdown="mode: click">
                         <a href="" class="affix" title="Закрепить" uk-tooltip><i class="uk-icon" uk-icon="icon:plus;ratio:1.1"></i></a>
                         <div class="teleport">
-                          <h3>Скорострел</h3>
+                          <h3>Щит Зома</h3>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/9/023.png"></button>
-                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Канализационный люк" uk-tooltip><img src="images/icons/9/023.png"></button>
+                              <div uk-dropdown="mode: click">Волна 1.2, 1.3</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/9/125.png"></button>
-                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Кузнечный молот" uk-tooltip><img src="images/icons/9/125.png"></button>
+                              <div uk-dropdown="mode: click">Продается в магазине.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/9/065.png"></button>
-                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Пластина с шипами" uk-tooltip><img src="images/icons/9/065.png"></button>
+                              <div uk-dropdown="mode: click">Продается в магазине</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/9/049.png"></button>
-                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Плавень" uk-tooltip><img src="images/icons/9/049.png"></button>
+                              <div uk-dropdown="mode: click">Продается в магазине.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button"><img src="images/icons/11/01.png"></button>
-                              <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Сплав стали и меди" uk-tooltip><img src="images/icons/9/049.png"></button>
+                              <div uk-dropdown="mode: click">Крафт.</div>
+                          </div>
+                          <div class="uk-inline uk-margin-small-bottom">
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Рецепт" uk-tooltip><img src="images/icons/11/01.png"></button>
+                              <div uk-dropdown="mode: click">Босс "Охуген", локация 1.2</div>
                           </div>
                         </div>
-                        <p><b>Атака:</b> +50</p>
-                        <p><b>Скорость атаки:</b> +5%</p>
+                        <p><b>Защита:</b> +10</p>
+                        <p><b>Блок урона:</b> 125</p>
+                        <p><b>Скорость передвижения:</b> -25</p>
                         <hr class="uk-margin-small" />
-                        <p>ОРБ эффект со спеллами автоатаки.
-                        <br>Этот предмет может быть только 1
-                        <br>Только для дальнего боя.</p>
+                        <p>Этот предмет может быть только 1
+                        <br>Только для ближнего боя.</p>
                       </div>
                   </div>
               </div>
@@ -621,11 +625,11 @@
                         <div class="teleport">
                           <h3>Первый сет</h3>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Миниракетомёт" uk-tooltip><img src="images/icons/1/09.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="МиниРакетомёт" uk-tooltip><img src="images/icons/1/09.png"></button>
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Энергоброня МАРК 2" uk-tooltip><img src="images/icons/5/21.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="ЭнергоБроня МАРК 2" uk-tooltip><img src="images/icons/5/21.png"></button>
                               <div uk-dropdown="mode: click">Продаются в магазине.</div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
@@ -833,7 +837,7 @@
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Энергоброня МАРК 6" uk-tooltip><img src="images/icons/5/25.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="ЭнергоБроня МАРК 6" uk-tooltip><img src="images/icons/5/25.png"></button>
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
@@ -860,7 +864,7 @@
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Энергоброня МАРК 6" uk-tooltip><img src="images/icons/5/25.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="ЭнергоБроня МАРК 6" uk-tooltip><img src="images/icons/5/25.png"></button>
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
@@ -883,11 +887,11 @@
                         <div class="teleport">
                           <h3>Сет Хаоса</h3>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Шлем хаоса" uk-tooltip><img src="images/icons/4/09.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Шлем Хаоса" uk-tooltip><img src="images/icons/4/09.png"></button>
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
-                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Броня хаоса" uk-tooltip><img src="images/icons/5/26.png"></button>
+                              <button class="uk-button uk-button-empty uk-padding-remove" type="button" title="Броня Хаоса" uk-tooltip><img src="images/icons/5/26.png"></button>
                               <div uk-dropdown="mode: click">Можно собрать из 4 Мусора, либо <a uk-scroll href="#steel">посмотреть крафт</a></div>
                           </div>
                           <div class="uk-inline uk-margin-small-bottom">
@@ -1034,9 +1038,9 @@
                           </div>
                         </div>
                         <p><b>Требуются для создания:</b></p>
-                        <hr class="uk-margin-small" />
-                        <p>Болты и клепки из сверхпрочного металла</p>
-                        <p>Реликвия императора</p> 
+                          <hr class="uk-margin-small" />
+                          <p>Болты и клепки из сверхпрочного металла</p>
+                          <p>Реликвия императора</p> 
                       </div>
                   </div>
 
@@ -1265,16 +1269,16 @@
                     </div>
                 </div>
             </section>
-					</div>
-				</div>
-				<footer>
-					<div class="uk-container uk-container-expand">
-						<div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid="">
-							<div class="uk-text-left">ZombieRecipes © 1929-2018</div>
-							<div class="uk-text-right">Crafted with love by <a href="http://wolfcreative.ru">wolfcreative</a></div>
-						</div>
-					</div>
-				</footer>
-		</div>
+          </div>
+        </div>
+        <footer>
+          <div class="uk-container uk-container-expand">
+            <div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid="">
+              <div class="uk-text-left">ZombieRecipes © 1929-2018</div>
+              <div class="uk-text-right">Crafted with love by <a href="http://wolfcreative.ru">wolfcreative</a></div>
+            </div>
+          </div>
+        </footer>
+    </div>
 </body>
 </html>
