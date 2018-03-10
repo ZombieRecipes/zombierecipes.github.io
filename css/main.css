@@ -24,9 +24,13 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .main-container{margin-left:160px}
 }
 
+
 .recipe{font-size:15px;margin:15px 5px 15px 15px;display:inline-block}
-.recipe .affix{position:absolute;top:28px;right:16px;color:#333}
+.recipe .affix{position:absolute;top:26px;right:16px;color:#333}
 .recipe .uk-button-empty img{max-width:58px}
+.recipe p{margin:5px 0}
+.teleport h3{max-width:360px;padding-right:20px;line-height:25px}
+.teleport .uk-dropdown{min-width:250px;padding:16px}
 
 .uk-card-header{border:none!important}
 .uk-card-header h2{color: #646464;font-size:16px;font-weight:bold;text-transform:uppercase}
@@ -45,5 +49,4 @@ h2{font-size:26px}
 .uk-button-empty:hover{background:#e3e3e3}
 .uk-button-empty span{max-width:130px;padding:10px;box-sizing:border-box;display:inline-block;line-height:18px;text-align:left;vertical-align:middle}
 
-* + address, * + dl, * + fieldset, * + figure, * + ol, * + p, * + pre, * + ul{margin-top:10px}
-address, dl, fieldset, figure, ol, p, pre, ul{margin-bottom:10px}
+.uk-tooltip-inner:first-letter{text-transform:capitalize}
