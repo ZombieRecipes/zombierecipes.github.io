@@ -30,7 +30,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .recipe p{margin:0}
 .teleport h3{max-width:360px;padding-right:20px;line-height:25px}
 .teleport .uk-dropdown{min-width:250px;padding:16px}
-span.red{color:#e72b2b; text-transform:lowercase}
+span.red{color:#e72b2b}
 
 .uk-card-header{border:none!important}
 .uk-card-header h2{color: #646464;font-size:16px;font-weight:bold;text-transform:uppercase}
