@@ -24,12 +24,11 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .main-container{margin-left:160px}
 }
 
-
 .recipe{font-size:15px;margin:15px 5px 15px 15px;display:inline-block}
 .recipe .affix{position:absolute;top:26px;right:16px;color:#333}
 .recipe .uk-button-empty img{max-width:58px}
+.recipe h3 .red{color:#e72b2b;text-transform:uppercase}
 .recipe p{margin:0}
-.recipe span .red{color:#e72b2b; text-transform:uppercase}
 .teleport h3{max-width:360px;padding-right:20px;line-height:25px}
 .teleport .uk-dropdown{min-width:250px;padding:16px}
 
