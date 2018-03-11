@@ -25,12 +25,22 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 
 .recipe{font-size:15px;margin:15px 5px 15px 15px;display:inline-block}
+.recipe>.uk-dropdown{min-width:300px}
 .recipe .affix{position:absolute;top:26px;right:16px;color:#333}
-.recipe .uk-button-empty img{max-width:58px}
+.recipe .uk-button-empty img{max-width:64px}
 .recipe p{margin:0}
 .teleport h3{max-width:360px;padding-right:20px;line-height:25px}
 .teleport h3 span.red{color:#e72b2b}
 .teleport .uk-dropdown{min-width:250px;padding:16px}
+@media (max-width:1600px){
+.recipe .uk-button-empty img{max-width:58px}
+}
+@media (max-width:1440px){
+.recipe .uk-button-empty img{max-width:56px}
+}
+@media (max-width:959px){
+.recipe .uk-button-empty img{max-width:52px}
+}
 
 .uk-card-header{border:none!important}
 .uk-card-header h2{color: #646464;font-size:16px;font-weight:bold;text-transform:uppercase}
