@@ -59,7 +59,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 @media (max-width:959px){
 .recipe{margin:0 5px 10px 10px;display:inline-block;font-size:13px}
-.recipe>.uk-dropdown{min-width:auto;padding:15px}
+.recipe>.uk-dropdown{min-width:200px;padding:15px}
 .recipe .uk-button-empty img{max-width:42px}
 .recipe .affix{top:19px}
 .teleport h3{font-size:20px}
