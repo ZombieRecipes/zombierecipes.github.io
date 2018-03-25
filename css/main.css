@@ -24,7 +24,8 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 
 .main-container{margin-left:170px;background:#f5f5f5}
-.main-container .uk-card-body{padding:15px 250px 0 0}
+.main-container .uk-card-body{padding:15px 290px 0 0}
+.main-container .uk-logo img{width:50px}
 @media (max-width:1440px){
 .main-container>.main>*{padding:0 25px}
 }
@@ -34,10 +35,14 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 @media (max-width:959px){
 .main-container{margin-left:110px}
-.main-container .uk-card-body{padding:15px 0 0}
+.main-container .uk-card-body{padding:10px 5px 0 0}
+}
+@media (max-width:639px){
+.main-container{margin-left:0}
 }
 
 .recipe{font-size:15px;margin:0 5px 15px 15px;display:inline-block}
+.recipe.last{padding-right:0}
 .recipe>.uk-dropdown{min-width:360px}
 .recipe .affix{position:absolute;top:26px;right:16px;color:#333}
 .recipe .uk-button-empty img{max-width:64px}
@@ -47,13 +52,17 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .teleport h3 span.green{color:#22b822}
 .teleport .uk-dropdown{min-width:250px;padding:16px}
 @media (max-width:1600px){
-.recipe .uk-button-empty img{max-width:58px}
+.recipe .uk-button-empty img{max-width:54px}
 }
 @media (max-width:1440px){
-.recipe .uk-button-empty img{max-width:56px}
+.recipe .uk-button-empty img{max-width:52px}
 }
 @media (max-width:959px){
-.recipe .uk-button-empty img{max-width:52px}
+.recipe{margin:0 5px 10px 10px;display:inline-block;font-size:13px}
+.recipe>.uk-dropdown{min-width:auto;padding:15px}
+.recipe .uk-button-empty img{max-width:42px}
+.recipe .affix{top:19px}
+.teleport h3{font-size:20px}
 }
 
 .uk-card-header{border:none!important}
@@ -70,10 +79,10 @@ h2{font-size:26px}
 .uk-notification img{max-width:54px}
 .uk-notification-message-primary{background:#d9ecd5}
 @media (max-width:1600px){
-.uk-notification{width:380px}
+.uk-notification{width:330px}
 }
 @media (max-width:959px){
-.uk-notification{width:270px}
+.uk-notification{min-width:200px;width:auto}
 }
 
 .uk-button-empty:hover{background:#e3e3e3}

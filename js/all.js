@@ -39,4 +39,16 @@ $(function() {
      }
    });
  });
+
+ /* Поиск последнего элемента в линии и простановка ему класса */
+ var lastElement = false;
+ $(window).on('load resize', function () {
+    $(".uk-card-body>.recipe").each(function() {
+        $(this).removeClass('last');
+        if (lastElement && lastElement.offset().top != $(this).offset().top) {
+            lastElement.addClass("last");
+        }
+        lastElement = $(this);
+    }).last().addClass("last");
+  });
 });

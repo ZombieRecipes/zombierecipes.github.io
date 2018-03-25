@@ -22,10 +22,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
 <body>
-    <nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left">
+    <nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left uk-visible@s">
         <div class="uk-navbar">
-            <a href="/" class="uk-navbar-item uk-logo" title="Owl Pool">
-              <img src="images/logo.svg" />
+            <a href="/" class="uk-navbar-item uk-logo" title="ZombieRecipes">
+              <img src="images/logo.svg" alt="ZombieRecipes" />
               <span class="title">ZombieRecipes</span>
             </a>
         </div>
@@ -48,18 +48,21 @@
           <header class="uk-container uk-container-expand">
             <div class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar>
                 <div class="uk-navbar-left">
-                  <ul class="uk-navbar-nav">
+                  <ul class="uk-navbar-nav uk-visible@s">
                       <li>
                           <a href="#">
-                              <span class="uk-icon" uk-icon="icon: search"></span>
+                              <span class=" uk-icon" uk-icon="icon: search"></span>
                               <span class="uk-visible@l uk-margin-small-left">Поиск Рецепта</span>
                           </a>
                       </li>
                   </ul>
     
-                  <div class="uk-navbar-item">
+                  <div class="uk-navbar-item uk-padding-remove">
+                      <a href="/" class="uk-navbar-item uk-logo" title="ZombieRecipes">
+                        <img src="images/logo.svg" alt="ZombieRecipes" />
+                      </a>
                       <form action="javascript:void(0)">
-                          <input class="uk-input uk-form-width-medium" type="text" placeholder="Введите название">
+                          <input class="uk-input uk-form-width-medium@s" type="text" placeholder="Введите название">
                       </form>
                   </div>
                 </div>
