@@ -13,6 +13,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 #sidebar ul li:hover{background:#232a32}
 #sidebar ul li.uk-active a{color:#fff}
 #sidebar ul a{color:rgba(255,255,255,0.5);display:block;font-size:13px;line-height:20px;margin:0}
+#sidebar hr{border-color:#3c434d}
 @media (max-width:1200px){
 #sidebar{width:160px}
 #sidebar .uk-logo{font-size:20px}
