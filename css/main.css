@@ -48,8 +48,6 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .recipe .uk-button-empty img{max-width:64px}
 .recipe p{margin:0}
 .teleport h3{max-width:360px;padding-right:20px;line-height:25px}
-.teleport h3 span.red{color:#e72b2b}
-.teleport h3 span.green{color:#22b822}
 .teleport .uk-dropdown{min-width:250px;padding:16px}
 @media (max-width:1600px){
 .recipe .uk-button-empty img{max-width:54px}
@@ -73,6 +71,9 @@ footer{background:#fff;padding:10px 0;font-size:13px}
 
 h1{font-size:34px}
 h2{font-size:26px}
+
+.uk-text-danger{color:#e72b2b!important}
+.uk-text-success{color:#22b822!important}
 
 .uk-notification{width:390px}
 .uk-notification h3{font-size:20px;margin-bottom:10px}

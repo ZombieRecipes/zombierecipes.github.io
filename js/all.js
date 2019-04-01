@@ -1,7 +1,6 @@
 $(function() {
-  var whatNeedClose;
   function closeDropdowns(button){
-    whatNeedClose = $(button).next('.teleport').find('.uk-dropdown.uk-open');
+    let whatNeedClose = $(button).next('.teleport').find('.uk-dropdown.uk-open');
     if (whatNeedClose.length !== 0){
       UIkit.dropdown(whatNeedClose).hide();
     };
