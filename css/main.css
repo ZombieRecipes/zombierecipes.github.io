@@ -29,12 +29,12 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .main-container .uk-logo img{width:50px}
 @media (max-width:1440px){
 .main-container>.main>*{padding:0 25px}
-.main-container .uk-card-body{padding-left:250px}
+.main-container .uk-card-body{padding-right:250px}
 }
 @media (max-width:1200px){
 .main-container{margin-left:160px}
 .main-container>.main>*{padding:0 15px}
-.main-container .uk-card-body{padding-left:190px}
+.main-container .uk-card-body{padding-right:190px}
 }
 @media (max-width:959px){
 .main-container{margin-left:110px}
