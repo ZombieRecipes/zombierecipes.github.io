@@ -25,7 +25,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 
 .main-container{margin-left:170px;background:#f5f5f5}
-.main-container .uk-card-body{padding:15px 320px 15px 15px}
+.main-container .uk-card-body{padding:15px 280px 15px 15px}
 .main-container .uk-logo img{width:50px}
 @media (max-width:1600px){
 .main-container .uk-card-body{padding-right:290px}
@@ -78,13 +78,10 @@ h2{font-size:26px}
 .uk-text-danger{color:#e72b2b!important}
 .uk-text-success{color:#22b822!important}
 
-.uk-notification{width:390px}
-.uk-notification h3{font-size:20px;margin-bottom:10px}
-.uk-notification img{max-width:54px}
-.uk-notification-message-primary{background:#d9ecd5}
-@media (max-width:1600px){
 .uk-notification{width:330px}
-}
+.uk-notification h3{font-size:20px;margin-bottom:10px}
+.uk-notification img{max-width:45px}
+.uk-notification-message-primary{background:#d9ecd5}
 @media (max-width:959px){
 .uk-notification{min-width:200px;width:auto}
 }
