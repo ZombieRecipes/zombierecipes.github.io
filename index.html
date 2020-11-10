@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ZombieRecipes - Рецепты, сборки для Zombie666 ORPG</title>
+
   <!-- Meta -->
   <meta name="keywords" content="zombie666,зомби666 рецепты,zombie666 сборки,зомби666,warcraft">
   <meta name="description" content="Сборки, рецепты, оружие, броня и вообще всё-всё-всё для Zombie666 Warcraft">
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <!-- jQuery -->
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
   <!-- Uikit3-->
   <script src="js/uikit-core.min.js"></script>
   <script src="js/notification.min.js"></script>
@@ -41,12 +41,11 @@
 
 <body>
   <nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left uk-visible@s">
-    <div class="uk-navbar">
-      <a href="/" class="uk-navbar-item uk-logo" title="ZombieRecipes">
-        <img src="images/logo.svg" alt="ZombieRecipes" />
-        <span class="title">ZombieRecipes</span>
-      </a>
+    <div class="logo uk-flex uk-flex-middle uk-flex-center uk-flex-column">
+      <img src="images/logo.svg" alt="ZombieRecipes" width="70" height="70" class="uk-preserve" data-uk-svg />
+      <span class="title">ZombieRecipes</span>
     </div>
+
     <ul class="uk-nav uk-nav-default uk-nav-parent-icon uk-margin-small-top" data-uk-nav>
       <li><a data-uk-scroll href="#long-weapon">Оружие дальнего боя</a></li>
       <li><a data-uk-scroll href="#long-weapon">Щиты дальнего боя</a></li>
@@ -59,15 +58,18 @@
       <li><a data-uk-scroll href="#other">Разное</a></li>
       <li><a data-uk-scroll href="#component">Компоненты</a></li>
     </ul>
-    <hr class="uk-margin-small-bottom" />
-    <div class="social uk-text-center uk-light">
-      <a href="https://vk.com/zm666_orpg" target="_blank" title="Группа в ВК" class="uk-button uk-button-text uk-text-small">Группа в ВК</a>
+
+    <div class="social uk-text-center uk-light uk-flex uk-flex-middle uk-flex-center">
+      <a href="https://vk.com/zm666_orpg" target="_blank" title="Группа в ВК" class="uk-button uk-button-text uk-text-small uk-margin-remove">Группа в ВК</a>
     </div>
-      <hr class="uk-margin-small" />
-      <div class="social uk-text-center uk-light"></div>
-      <p>Последнее редактирование:</p>
-      <p>19.01.2020</p>
-      </div>
+
+    <div class="uk-text-center uk-light uk-text-small">
+      <p>
+        Последнее редактирование:
+        <br/><br/>
+        11.11.2020
+      </p>
+    </div>
   </nav>
 
   <div class="main-container">
@@ -86,10 +88,10 @@
 
             <div class="uk-navbar-item uk-padding-remove">
               <a href="/" class="uk-navbar-item uk-logo uk-hidden@s" title="ZombieRecipes">
-                <img src="images/logo.svg" alt="ZombieRecipes" width="70" height="70" />
+                <img src="images/logo.svg" alt="ZombieRecipes" width="70" height="70" data-uk-svg />
               </a>
               <form action="javascript:void(0)">
-                <input class="uk-input uk-form-width-medium@s" type="text" placeholder="Введите название">
+                <input class="uk-input uk-width-medium@s" type="text" placeholder="Введите название">
               </form>
             </div>
           </div>
@@ -6961,12 +6963,11 @@
   <footer>
     <div class="uk-container uk-container-expand">
       <div class="uk-grid uk-grid-small uk-child-width-1-2" data-uk-grid>
-        <div class="uk-text-left">ZombieRecipes © 1929-2020</div>
+        <div class="uk-text-left">ZombieRecipes © 1929 - <span id="year">2021</span></div>
         <div class="uk-text-right">Created with love by <a href="http://wolfcreative.ru">wolfcreative</a></div>
       </div>
     </div>
   </footer>
   </div>
 </body>
-
 </html>
