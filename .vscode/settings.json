@@ -1,7 +1,7 @@
 {
   "git.confirmSync": false,
   "typescript.check.npmIsInstalled": false,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "git.autofetch": true,
