@@ -1,9 +1,12 @@
-body{font-family:'Open Sans', sans-serif;font-size:15px}
+@font-face{font-family:'Open Sans';src:url(../fonts/OpenSans-Regular.woff2) format("woff2");font-weight:400;font-style:normal}
+@font-face{font-family:'Open Sans';src:url(../fonts/OpenSans-Bold.woff2) format("woff2");font-weight:700;font-style:normal}
+
+body{font-family:'Open Sans',sans-serif;font-size:14px}
 
 a{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 
-#sidebar{width:170px;background:#2c343f;text-align:center}
+#sidebar{width:170px;height:100%;background:#2c343f;text-align:center}
 #sidebar .logo{background:#3c434d;padding:10px 5px 8px;box-sizing:border-box}
 #sidebar .logo img,#sidebar .logo svg{width:70px;height:70px}
 #sidebar .logo .title{font-size:20px;color:#fff;margin-top:7px}
@@ -12,7 +15,9 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 #sidebar ul li:hover{background:#232a32}
 #sidebar ul li.uk-active a{color:#fff}
 #sidebar ul a{color:rgba(255,255,255,0.59);display:block;font-size:13px;line-height:20px;margin:0}
-#sidebar .social{border:1px solid #3c434d;border-left:none;border-right:none;margin:25px 0;padding:15px 5px 17px}
+#sidebar .social{border:1px solid #3c434d;border-left:none;border-right:none;margin:25px 0}
+#sidebar .social a{padding:15px 5px}
+#sidebar .social a:hover{background:#3c434d;color:#fff}
 @media (max-width:1200px){
 #sidebar{width:160px}
 #sidebar .logo .title{font-size:17px}
@@ -24,9 +29,15 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 #sidebar p{font-size:12px}
 }
 
+.main-container header{background:#dedede;padding-top:14px;padding-bottom:14px}
+
+.main-container header input:focus{background:#fff}
+@media (max-width:639px){
+    .main-container header input{font-size:12px}
+}
+
 .main-container{margin-left:170px;background:#f5f5f5}
 .main-container .uk-card-body{padding:15px 280px 15px 15px}
-.main-container .logo img{width:50px}
 @media (max-width:1600px){
 .main-container .uk-card-body{padding-right:290px}
 }
@@ -46,12 +57,12 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 
 .recipe{font-size:15px;}
-.recipe>.uk-dropdown{min-width:360px}
-.recipe .affix{position:absolute;top:26px;right:16px;color:#333}
+.recipe>.uk-dropdown{min-width:360px;box-shadow:0 14px 25px rgba(0,0,0,.16);padding:25px}
+.recipe .affix{position:absolute;top:26px;right:16px;color:#333;line-height:normal;display:block}
 .recipe .uk-button-empty{border-radius:7px;overflow:hidden;box-shadow:0 3px 7px rgba(0,0,0,.16)}
 .recipe .uk-button-empty img{max-width:64px}
 .recipe p{margin:0}
-.teleport h3{max-width:360px;padding-right:20px;line-height:25px}
+.teleport h3{max-width:360px;padding-right:24px;line-height:25px}
 .teleport .uk-dropdown{min-width:250px;padding:16px}
 @media (max-width:1600px){
 .recipe .uk-button-empty img{max-width:54px}
@@ -65,6 +76,9 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .recipe .uk-button-empty img{max-width:42px}
 .recipe .affix{top:19px}
 .teleport h3{font-size:20px}
+}
+@media (max-height:430px){
+    .recipe>.uk-dropdown{max-height:90vh;overflow:auto}
 }
 
 .uk-card-header{border:none!important}
@@ -92,7 +106,9 @@ h2{font-size:26px}
 
 .uk-tooltip-inner:first-letter{text-transform:capitalize}
 
+.uk-text-small{font-size:12px}
+
 .uk-lightbox{background:rgba(0,0,0,.7)}
 
-.something{width:100%;height:10px;background:#2c343f;display:block;line-height:10px}
+.something{width:110px;height:5px;background:#2c343f;display:block}
 .something:hover{background:#505b6b;text-decoration:none}
