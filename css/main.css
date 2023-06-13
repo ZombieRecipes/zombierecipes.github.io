@@ -9,7 +9,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 #sidebar{width:170px;height:100%;background:#2c343f;text-align:center}
 #sidebar .logo{background:#3c434d;padding:10px 5px 8px;box-sizing:border-box}
 #sidebar .logo img,#sidebar .logo svg{width:70px;height:70px}
-#sidebar .logo .title{font-size:20px;color:#fff;margin-top:7px}
+#sidebar .logo .title{font-size:19px;color:#fff;margin-top:8px}
 #sidebar ul{text-align:left}
 #sidebar ul li{padding:2px 10px}
 #sidebar ul li:hover{background:#232a32}
@@ -25,7 +25,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 }
 @media (max-width:959px){
 #sidebar{width:110px}
-#sidebar .logo .title{font-size:14px}
+#sidebar .logo .title{font-size:14px;line-height:18px}
 #sidebar p{font-size:12px}
 }
 
