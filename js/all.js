@@ -1,3 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const logoWrapper = document.querySelector('.logo')
+
+  const logo = document.createElement("img")
+  logo.classList.add('uk-preserve')
+  logo.width = 70
+  logo.height = 70
+  logo.alt = 'ZombieRecipes'
+  logo.setAttribute('data-uk-svg', '')
+
+  let randNumber = Math.floor(Math.random() * 667);
+
+  if (randNumber === 6 || randNumber === 66 || randNumber === 666){
+    logo.src = 'images/logo_rofl.svg'
+
+    let logoTitle = document.querySelector('.logo .title')
+
+    if (logoTitle !== null){
+      logoTitle.innerHTML = 'Зомби. Рецепты'
+    }
+  } else {
+    logo.src = 'images/logo.svg'
+  }
+
+  logoWrapper.prepend(logo)
+})
+
 $(function() {
   function closeDropdowns(button){
     let whatNeedClose = $(button).next('.teleport').find('.uk-dropdown.uk-open');
@@ -46,7 +73,7 @@ $(function() {
 
   // Текущий год в футере
   const year = document.getElementById("year");
-  if (year !== undefined){
+  if (year !== null){
     year.innerText = new Date().getFullYear();
   }
 
