@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-
   // Поиск предметов
   document.querySelectorAll("header form input").forEach((item) => {
     item.addEventListener('keyup', function() {
