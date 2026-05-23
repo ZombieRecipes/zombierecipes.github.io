@@ -1,4 +1,22 @@
+const savedTheme = localStorage.getItem('theme')
+
+if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark')
+
 document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.querySelector('.theme-toggle')
+
+  themeToggle?.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark'
+
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme')
+      localStorage.setItem('theme', 'light')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark')
+      localStorage.setItem('theme', 'dark')
+    }
+  })
+
   const logoWrapper = document.querySelector('.logo')
 
   if (logoWrapper !== null){
@@ -69,12 +87,67 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => teleportDropdown(button), 520);
   }
 
+  function normalizeItemName(text) {
+    return text.trim().replace(/\s+/g, ' ').toLowerCase()
+  }
+
+  function getTooltipTitle(button) {
+    const tooltip = button.getAttribute('data-uk-tooltip') ?? ''
+    const match = tooltip.match(/(?:^|;)\s*title:\s*([^;]+)/)
+
+    return match?.[1]?.trim() ?? button.getAttribute('title')?.trim() ?? ''
+  }
+
+  function openRecipeByName(name) {
+    const normalizedName = normalizeItemName(name)
+
+    if (normalizedName.length === 0) return
+
+    const heading = Array.from(document.querySelectorAll('.recipe .teleport h3')).find((item) => normalizeItemName(item.textContent ?? '') === normalizedName)
+    const recipe = heading?.closest('.recipe')
+
+    if (!recipe) return
+
+    recipe.style.display = 'block'
+    recipe.scrollIntoView({ behavior: 'smooth', block: 'center' })
+
+    UIkit.update(document.body, 'update')
+
+    const dropdown = Array.from(recipe.children).find((item) => item.matches('[data-uk-dropdown]'))
+
+    if (dropdown) setTimeout(() => UIkit.dropdown(dropdown).show(), 320)
+  }
+
+  function getNotificationItemName(target) {
+    const button = target.closest('.teleport .uk-button-empty')
+
+    if (button) return getTooltipTitle(button)
+
+    return ''
+  }
+
+  function bindPinnedNotification(message) {
+    if (!message) return
+
+    message.addEventListener('click', (event) => {
+      if (!(event.target instanceof Element)) return
+      if (event.target.closest('.uk-notification-close')) return
+
+      const itemName = getNotificationItemName(event.target)
+
+      event.preventDefault()
+      event.stopImmediatePropagation()
+
+      if (itemName.length > 0) openRecipeByName(itemName)
+    }, true)
+  }
+
   function teleportDropdown(button){
     UIkit.notification({
       message: '<div id="insertMove"></div>',
       status: 'primary',
       pos: 'top-right',
-      timeout: 31599000 // почти год
+      timeout: 0
     });
 
     const teleportElement = button.nextElementSibling;
@@ -82,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (teleportElement?.classList.contains('teleport') && insertMoveElement) {
       insertMoveElement.append(teleportElement.cloneNode(true));
+      bindPinnedNotification(insertMoveElement.closest('.uk-notification-message'))
     }
 
     insertMoveElement?.removeAttribute('id');

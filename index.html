@@ -33,17 +33,17 @@
 
   <!-- Uikit3 -->
   <link rel="stylesheet" href="css/uikit.min.css?ver=3.25.16">
-  <link rel="stylesheet" href="css/main.css?ver=23.05.2026">
+  <link rel="stylesheet" href="css/main.css?ver=23.05.2026-2">
 
   <!-- Uikit3-->
   <script src="js/uikit-core.min.js?ver=3.25.16"></script>
   <script src="js/notification.min.js?ver=3.25.16"></script>
   <script src="js/tooltip.min.js?ver=3.25.16"></script>
-  <script src="js/all.js?ver=23.05.2026"></script>
+  <script src="js/all.js?ver=23.05.2026-2"></script>
 </head>
 
 <body>
-  <nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left uk-visible@s uk-overflow-auto">
+  <nav id="sidebar" class="uk-height-viewport uk-position-fixed uk-position-top-left uk-visible@s uk-overflow-auto uk-flex uk-flex-column">
     <div class="logo uk-flex uk-flex-middle uk-flex-center uk-flex-column">
       <!--<img src="images/logo.svg" alt="ZombieRecipes" width="70" height="70" class="uk-preserve" data-uk-svg="">-->
       <span class="title">ZombieRecipes</span>
@@ -62,17 +62,19 @@
       <li><a data-uk-scroll="offset:16" href="#component">Компоненты</a></li>
     </ul>
 
-    <div class="social uk-text-center uk-light uk-flex uk-flex-middle uk-flex-center">
-      <a href="https://vk.com/zm666_orpg" target="_blank" title="Группа в ВК" class="uk-width-1-1 uk-button uk-button-text uk-text-small">Группа в ВК</a>
-    </div>
-    <div class="social uk-text-center uk-light uk-flex uk-flex-middle uk-flex-center">
-      <a href="https://discord.gg/u7mt3hv" target="_blank" title="Discord" class="uk-width-1-1 uk-button uk-button-text uk-text-small">Discord</a>
-    </div>
-
-    <div class="uk-text-center uk-light">
+    <div class="version uk-text-center uk-light">
       <p>
         Последняя версия: <span class="uk-text-small uk-display-block uk-margin-small-top">Zombie666 33.3</span>
       </p>
+    </div>
+
+    <div class="social uk-margin-auto-top uk-flex uk-flex-middle uk-flex-center">
+      <a href="https://vk.com/zm666_orpg" target="_blank" title="Группа в ВК" class="uk-icon-button" data-uk-tooltip="title: Группа в ВК; pos: right">
+        <img src="images/vk.svg" width="34" height="34" alt="Группа в ВК" loading="lazy">
+      </a>
+      <a href="https://discord.gg/u7mt3hv" target="_blank" title="Discord" class="uk-icon-button" data-uk-tooltip="title: Discord; pos: right">
+        <img src="images/discord.svg" width="34" height="34" alt="Discord" loading="lazy">
+      </a>
     </div>
   </nav>
 
@@ -86,13 +88,20 @@
         </div>
 
         <div class="uk-visible@s">
-          <img src="images/search.svg" width="25" height="auto" alt="" loading="lazy">
+          <img class="theme-icon" src="images/search.svg" width="25" height="auto" alt="" loading="lazy">
         </div>
 
         <div class="uk-width-expand">
-          <form action="javascript:void(0)">
-            <input class="uk-width-1-1 uk-input" type="text" placeholder="Введите название предмета" aria-label="Search">
+          <form class="uk-search uk-search-default uk-width-1-1" action="javascript:void(0)">
+            <input class="uk-search-input" type="search" placeholder="Введите название предмета" aria-label="Search">
           </form>
+        </div>
+
+        <div>
+          <button class="theme-toggle uk-icon-button" type="button" aria-label="Сменить тему" data-uk-tooltip="title: Сменить тему; pos: bottom">
+            <img class="theme-toggle__icon theme-toggle__icon--light" src="images/sun.svg" width="22" height="22" alt="" loading="lazy">
+            <img class="theme-toggle__icon theme-toggle__icon--dark" src="images/moon.svg" width="22" height="22" alt="" loading="lazy">
+          </button>
         </div>
       </div>
     </header>
