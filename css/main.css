@@ -41,7 +41,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 .main-container header .uk-search-default .uk-search-input{height:42px;background:var(--surface-bg);border-color:var(--border-color);border-radius:12px;color:var(--text-color);box-shadow:0 2px 10px rgba(36,48,61,.05)}
 .main-container header .uk-search-default .uk-search-input::placeholder{color:var(--muted-text)}
 .main-container header .uk-search-default .uk-search-input:focus{background:var(--surface-bg);border-color:var(--accent-color);box-shadow:var(--focus-shadow)}
-.theme-toggle.uk-icon-button{width:42px;height:42px;background:var(--surface-bg);border:1px solid var(--border-color);color:var(--text-color);box-shadow:0 2px 10px rgba(36,48,61,.05);transition:all .2s ease}
+.theme-toggle.uk-icon-button{width:42px;height:42px;background:var(--surface-bg);border:1px solid var(--border-color);color:var(--text-color);box-shadow:0 2px 10px rgba(36,48,61,.05);transition:all .2s ease;cursor:pointer}
 .theme-toggle.uk-icon-button:hover,.theme-toggle.uk-icon-button:focus{background:var(--surface-bg);border-color:var(--accent-color);box-shadow:var(--focus-shadow);outline:none}
 .theme-toggle__icon{display:none}
 :root:not([data-theme="dark"]) .theme-toggle__icon--dark{display:block}
@@ -112,9 +112,9 @@ h2{font-size:26px}
 .uk-text-danger{color:#e72b2b!important}
 .uk-text-success{color:#22b822!important}
 
-.uk-notification{width:340px;z-index:666}
+.uk-notification{width:340px;z-index:666;top:70px}
 .uk-notification h3{font-size:20px;margin-bottom:10px}
-.uk-notification img{max-width:45px}
+.uk-notification img{max-width:45px;border-radius:5px}
 .uk-notification-message-primary{background:var(--notification-bg);color:var(--text-color);border:1px solid var(--notification-border);border-left:4px solid var(--notification-accent);border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.24);cursor:default}
 .uk-notification-message-primary .uk-notification-close{display:block}
 .uk-notification-message-primary .teleport h3{color:var(--text-color)}
@@ -132,5 +132,5 @@ h2{font-size:26px}
 
 .uk-lightbox{background:rgba(0,0,0,.7)}
 
-.something{width:110px;height:5px;background:#2c343f;display:block}
-.something:hover{background:#505b6b;text-decoration:none}
+.something{width:120px;height:5px;background:var(--sidebar-bg);display:block}
+.something:hover{background:#505b5b;text-decoration:none}
