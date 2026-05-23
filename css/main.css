@@ -13,7 +13,7 @@ a:hover,a:focus{-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms
 #sidebar .logo{background:var(--sidebar-head-bg);padding:10px 5px 8px;box-sizing:border-box}
 #sidebar .logo img,#sidebar .logo svg{width:70px;height:70px}
 #sidebar .logo .title{font-size:19px;color:#fff;margin-top:8px}
-#sidebar ul{text-align:left;padding:6px 8px}
+#sidebar ul{text-align:left;padding:6px 8px;margin:10px 0 0}
 #sidebar ul li{padding:2px 0}
 #sidebar ul li:hover{background:transparent}
 #sidebar ul li.uk-active a{color:#fff;background:var(--sidebar-hover-bg)}
